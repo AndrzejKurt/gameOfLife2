@@ -1,0 +1,37 @@
+body,
+html {
+    height: 100%;
+}
+
+.game-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #a5c0ff;
+}
+
+.controls-wrapper {
+    margin: 15px 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.cell {
+    border: 1px solid rgb(0, 0, 0);
+    transition: background 0.1s ease-in;
+    cursor: pointer;
+
+}
+
+.cell.non-active {
+    background: white;
+}
+
+.cell.active {
+    background: rgb(0, 21, 255);
+}
